@@ -135,11 +135,10 @@ class Checkout extends React.Component {
                 alt={intl.formatMessage(messages['payment.page.method.type.credit'])}
               />
             </button> */}
-            <form method='POST'>
+            <form method='POST' onSubmit={this.handleSubmitPayPal}>
               <CustomForm intl={intl} handleChange={this.handleState}/>
               <div className='submit-btn'>
                   <PayPalButton
-                    onSubmit={this.handleSubmitPayPal}
                     className={classNames('payment-method-button', { 'skeleton-pulse': loading })}
                     disabled={submissionDisabled}
                     isProcessing={payPalIsSubmitting}
