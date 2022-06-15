@@ -20,7 +20,8 @@ import { Route, Switch } from 'react-router-dom';
 import { sendTrackEvent } from '@edx/frontend-platform/analytics';
 import { logError } from '@edx/frontend-platform/logging';
 import Header, { messages as headerMessages } from '@edx/frontend-component-header';
-import Footer, { messages as footerMessages } from '@edx/frontend-component-footer';
+import { messages as footerMessages } from '@edx/frontend-component-footer';
+import Footer from "./Components/Footer";
 import './css/payment.css'
 import appMessages from './i18n';
 import {
