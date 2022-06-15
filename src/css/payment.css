@@ -80,7 +80,7 @@ footer{height: 128px !important}
   .menu-trigger {
     border: none;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-evenly !important;
     width: 100%;
     color: var(--unnamed-color-777777);
   }
